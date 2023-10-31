@@ -3,14 +3,13 @@ import "./styles.css";
 
 export default function App() {
   const [count, setCount] = useState(0);
-  const [minus, setMinus] = useState(count);
 
   const onClickCount = () => {
     setCount(count + 1);
   };
 
   const onClickMinus = () => {
-    setMinus(count - 1);
+    setCount(count - 1);
   };
   return (
     <div className="App">
